@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Bulb-On-Off</title>
+</head>
+
+<body>
+    <div class="Main-Container"><img src="./Images/Bulb-Off.png" alt="" srcset="" id="img"></div>
+    <div class="container">
+        <div class="btn"><button onclick="clickOn()">On</button></div>
+        <div class="btn"><button onclick="clickOff()">Off</button></div>
+    </div>
+
+
+    <script>
+        const clickOn = () => {
+            return document.getElementById('img').src = "./Images/Bulb-On.png"
+        }
+        const clickOff = () => {
+            return document.getElementById('img').src = "./Images/Bulb-Off.png"
+        }
+    </script>
+</body>
+
+</html>

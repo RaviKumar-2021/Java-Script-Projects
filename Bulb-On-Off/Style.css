@@ -1,0 +1,17 @@
+.Main-Container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: yellow;
+}
