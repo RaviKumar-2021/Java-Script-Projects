@@ -11,23 +11,70 @@
     .container {
         text-align: center;
         background-color: red;
-        margin-top: 20%;
+        margin-top: 10%;
         padding: 10%;
+    }
+    
+    .container h1 {
+        margin-top: -20px;
+    }
+    
+    input {
+        color: blue;
+        padding: 10px;
+        border-radius: 100px;
+        border: 2px solid black;
+    }
+    
+    select {
+        color: blue;
+        margin-left: -60px;
+        padding: 10px;
+        border-radius: 100px;
+        animation-name: slider;
+        animation-duration: 2s;
+        animation-delay: 0.5;
+        border: 2px solid black;
+    }
+    
+    #res {
+        color: blue;
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 100px;
+        border: 2px solid black;
+    }
+    
+    button {
+        color: blue;
+        background-color: darkred;
+        padding: 20px;
+        border-radius: 100px
+    }
+    
+    @keyframes slider {
+        to {
+            margin-left: -100px;
+        }
+        from {
+            margin-left: -100%;
+        }
     }
 </style>
 
 <body>
     <div class="container">
+        <h1>Temperature Converter</h1>
 
         <input type="number" name="value" id="value">
 
         <select name="change" id="change">
-         <option value="ktc">Kelbin To Celsius</option>
-         <option value="ktf">Kelbin To Fahrenheit</option>
-         <option value="ctk">Celsius To Kalbin</option>
+         <option value="ktc">Kelvin To Celsius</option>
+         <option value="ktf">Kelvin To Fahrenheit</option>
+         <option value="ctk">Celsius To Kalvin</option>
          <option value="ctf">Celsius To Fahrenheit</option>
          <option value="ftc">Fahrenheit to Celsius</option>
-         <option value="ftk">Fahrenheit to Kelbin</option>
+         <option value="ftk">Fahrenheit to Kelvin</option>
 
          
 
@@ -46,9 +93,9 @@
             } else if (select == 'ftc') {
                 return (Num - 32) / 180 + " Celsius";
             } else if (select == 'ktf') {
-                return 1.8(Num - 273.15) + 32 + " Fahrenheit";
+                return (Num - 273.15) * (9 / 5) + 32 + " Fahrenheit";
             } else if (select == 'ctk') {
-                return Num + 273.15 + " Kelbin";
+                return (-Num - 273.15) * (-1) + " Kelbin";
             } else if (select == 'ctf') {
                 return (9 / 5 * Num) + 32 + " Fahrenheit";
             } else {
@@ -57,9 +104,6 @@
 
 
         }
-
-
-
         const Result = () => {
 
             document.getElementById('res').innerHTML = Changes();
@@ -67,7 +111,7 @@
     </script>
 
 
-    <!-- 0K − 273.15 = -273.1°C -->
+
 
 
 </body>
