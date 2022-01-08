@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Bar</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Teko:wght@300;400;500;600;700&display=swap');
+        .container {
+            text-align: center;
+        }
+        
+        body {
+            background-color: blue;
+            margin: 35px;
+        }
+        
+        input {
+            margin: 10% auto;
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        
+        .div1 {
+            height: 100px;
+            overflow: hidden;
+        }
+        
+        li {
+            margin-bottom: 100px;
+            font-size: 32px;
+            color: black;
+            list-style: none;
+            font-family: 'Teko', sans-serif
+        }
+        
+        @media screen and (min-width: 600px) {
+            li {
+                font-size: auto;
+                list-style: none;
+            }
+        }
+        
+        .Items {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="searchBar">
+            <h1>Hindi To English Dictionary</h1>
+
+            <input type="text" placeholder="Search English" name="searchBar" id="searchBar" onkeyup="DemoFun()">
+        </div>
+        <div class="Items">
+            <div class="div1">
+
+
+                <ul id="filter">
+                    <li> </li>
+                    <li>as : जैसा</li>
+                    <li>I : मैं</li>
+                    <li>his : उसके</li>
+                    <li>that : कि</li>
+                    <li>he : वह</li>
+                    <li>was : था</li>
+                    <li>for : के लिए</li>
+                    <li>on : पर</li>
+                    <li>are : हैं</li>
+                    <li>with : साथ</li>
+                    <li>they : वे</li>
+                    <li>be : हो</li>
+                    <li>at : पर</li>
+                    <li>one : एक</li>
+                    <li>have : है</li>
+                    <li>this : इस</li>
+                    <li>from : से</li>
+                    <li>by : द्वारा</li>
+                    <li>hot : गरम</li>
+                    <li>word : शब्द</li>
+                    <li>but : लेकिन</li>
+                    <li>what : क्या</li>
+                    <li>some : कुछ</li>
+                    <li>is : है</li>
+                    <li>it : यह</li>
+                    <li>you : आप</li>
+                    <li>or : या</li>
+                    <li>had : था</li>
+                    <li>the : </li>
+                    <li>of : की</li>
+                    <li>to : तक</li>
+                    <li>and : और</li>
+                    <li>a : एक</li>
+                    <li>in : में</li>
+                    <li>we : हम</li>
+                    <li>can : कर सकते हैं</li>
+                    <li>out : बाहर</li>
+                    <li>other : अन्य</li>
+                    <li>were : थे</li>
+                    <li>which : जो</li>
+                    <li>do : कर</li>
+                    <li>their : उनके</li>
+                    <li>time : समय</li>
+                    <li>if : अगर</li>
+                    <li>will : होगा</li>
+                    <li>how : कैसे</li>
+                    <li>said : कहा</li>
+                    <li>an : एक</li>
+                    <li>each : प्रत्येक</li>
+                    <li>tell : बता</li>
+                    <li>does : करता है</li>
+                    <li>set : सेट</li>
+                    <li>three : तीन</li>
+                    <li>want : चाहते हैं</li>
+                    <li>air : हवा</li>
+                    <li>well : अच्छी तरह से</li>
+                    <li>also : भी</li>
+                    <li>play : खेलने</li>
+                    <li>small : छोटे</li>
+                    <li>end : अंत</li>
+                    <li>put : डाल</li>
+                    <li>home : घर</li>
+                    <li>read : पढ़ा</li>
+                    <li>hand : हाथ</li>
+                    <li>port : बंदरगाह</li>
+                    <li>large : बड़ा</li>
+                    <li>spell : जादू</li>
+                    <li>add : जोड़</li>
+                    <li>even : और भी</li>
+                    <li>land : भूमि</li>
+                    <li>here : यहाँ</li>
+                    <li>must : चाहिए</li>
+                    <li>big : बड़ा</li>
+                    <li>high : उच्च</li>
+                    <li>such : ऐसा</li>
+                    <li>follow : का पालन करें</li>
+                    <li>act : अधिनियम</li>
+                    <li>why : क्यों</li>
+                    <li>ask : पूछना</li>
+                    <li>men : पुरुषों</li>
+                    <li>change : परिवर्तन</li>
+                    <li>went : चला गया</li>
+                    <li>light : प्रकाश</li>
+                    <li>kind : तरह</li>
+                    <li>off : बंद</li>
+                    <li>need : आवश्यकता</li>
+                    <li>house : घर</li>
+                    <li>picture : तस्वीर</li>
+                    <li>try : कोशिश</li>
+                    <li>us : हमें</li>
+                    <li>again : फिर</li>
+                    <li>animal : पशु</li>
+                    <li>point : बिंदु</li>
+                    <li>mother : मां</li>
+                    <li>world : दुनिया</li>
+                    <li>near : निकट</li>
+                    <li>build : बनाना</li>
+                    <li>self : आत्म</li>
+                    <li>earth : पृथ्वी</li>
+                    <li>father : पिता</li>
+                    <li>any : किसी भी</li>
+                    <li>new : नई</li>
+                    <li>work : काम</li>
+                    <li>part : हिस्सा</li>
+                    <li>take : लेना</li>
+                    <li>get : प्राप्त</li>
+                    <li>place : जगह</li>
+                    <li>made : निर्मित</li>
+                    <li>live : जीना</li>
+                    <li>where : जहां</li>
+                    <li>after : के बाद</li>
+                    <li>back : वापस</li>
+                    <li>little : थोड़ा</li>
+                    <li>only : केवल</li>
+                    <li>round : दौर</li>
+                    <li>man : आदमी</li>
+                    <li>year : वर्ष</li>
+                    <li>came : आया</li>
+                    <li>show : शो</li>
+                    <li>every : हर</li>
+                    <li>good : अच्छा</li>
+                    <li>me : मुझे</li>
+                    <li>give : दे</li>
+                    <li>our : हमारे</li>
+                    <li>under : नीचे</li>
+                    <li>name : नाम</li>
+                    <li>very : बहुत</li>
+                    <li>through : के माध्यम से</li>
+                    <li>just : बस</li>
+                    <li>form : फार्म</li>
+                    <li>sentence : वाक्य</li>
+                    <li>great : महान</li>
+                    <li>think : लगता है</li>
+                    <li>say : कहना</li>
+                    <li>help : मदद</li>
+                    <li>low : कम</li>
+                    <li>line : रेखा</li>
+                    <li>differ : अलग</li>
+                    <li>turn : बारी</li>
+                    <li>cause : कारण</li>
+                    <li>much : ज्यादा</li>
+                    <li>mean : मतलब</li>
+                    <li>before : पहले</li>
+                    <li>move : चाल</li>
+                    <li>right : सही</li>
+                    <li>boy : लड़का</li>
+                    <li>old : पुराना</li>
+                    <li>too : भी</li>
+                    <li>same : वही</li>
+                    <li>she : वह</li>
+                    <li>all : सब</li>
+                    <li>there : वहाँ</li>
+                    <li>when : जब</li>
+                    <li>up : ऊपर</li>
+                    <li>use : उपयोग</li>
+                    <li>your : अपने</li>
+                    <li>way : रास्ता</li>
+                    <li>about : के बारे में</li>
+                    <li>many : कई</li>
+                    <li>then : तो</li>
+                    <li>them : उन्हें</li>
+                    <li>write : लिखना</li>
+                    <li>would : होगा</li>
+                    <li>like : जैसा</li>
+                    <li>so : तो</li>
+                    <li>these : इन</li>
+                    <li>her : उसके</li>
+                    <li>long : लंबे समय तक</li>
+                    <li>make : कर</li>
+                    <li>thing : बात</li>
+                    <li>see : देखना</li>
+                    <li>him : उसे</li>
+                    <li>two : दो</li>
+                    <li>has : है</li>
+                    <li>look : देखो</li>
+                    <li>more : अधिक</li>
+                    <li>day : दिन</li>
+                    <li>could : सकता है</li>
+                    <li>go : जाना</li>
+                    <li>come : आ</li>
+                    <li>did : किया</li>
+                    <li>number : संख्या</li>
+                    <li>sound : ध्वनि</li>
+                    <li>no : नहीं</li>
+                    <li>most : सबसे</li>
+                    <li>people : लोग</li>
+                    <li>my : मेरे</li>
+                    <li>over : अधिक</li>
+                    <li>know : पता</li>
+                    <li>water : पानी</li>
+                    <li>than : से</li>
+                    <li>call : कॉल</li>
+                    <li>first : पहले</li>
+                    <li>who : कौन</li>
+                    <li>may : मई</li>
+                    <li>down : नीचे</li>
+                    <li>side : पक्ष</li>
+                    <li>been : गया</li>
+                    <li>now : अब</li>
+                    <li>find : लगता है</li>
+                    <li>head : सिर</li>
+                    <li>stand : खड़े</li>
+                    <li>own : खुद</li>
+                    <li>page : पेज</li>
+                    <li>should : चाहिए</li>
+                    <li>country : देश</li>
+                    <li>found : पाया</li>
+                    <li>answer : जवाब</li>
+                    <li>school : स्कूल</li>
+                    <li>grow : बढ़ने</li>
+                    <li>study : अध्ययन</li>
+                    <li>still : अब तक</li>
+                    <li>learn : सीखना</li>
+                    <li>plant : संयंत्र</li>
+                    <li>cover : कवर</li>
+                    <li>food : भोजन</li>
+                    <li>sun : सूरज</li>
+                    <li>four : चार</li>
+                    <li>between : के बीच</li>
+                    <li>state : राज्य</li>
+                    <li>keep : रखना</li>
+                    <li>eye : आंख</li>
+                    <li>never : कभी नहीं</li>
+                    <li>last : पिछले</li>
+                    <li>let : चलो</li>
+                    <li>thought : सोचा</li>
+                    <li>city : शहर</li>
+                    <li>tree : पेड़</li>
+                    <li>cross : पार</li>
+                    <li>farm : खेत</li>
+                    <li>hard : कठिन</li>
+                    <li>start : शुरुआत</li>
+                    <li>might : हो सकता है</li>
+                    <li>story : कहानी</li>
+                    <li>saw : देखा</li>
+                    <li>far : दूर</li>
+                    <li>sea : समुद्र</li>
+                    <li>draw : आकर्षित</li>
+                    <li>left : छोड़ा</li>
+                    <li>late : देर से</li>
+                    <li>run : चलाने</li>
+                    <li>don’t : ऐसा नहीं</li>
+                    <li>while : जबकि</li>
+                    <li>press : प्रेस</li>
+                    <li>close : करीब</li>
+                    <li>night : रात</li>
+                    <li>real : असली</li>
+                    <li>life : जीवन</li>
+                    <li>few : कुछ</li>
+                    <li>north : उत्तर</li>
+                    <li>book : किताब</li>
+                    <li>carry : ले</li>
+                    <li>took : ले लिया</li>
+                    <li>science : विज्ञान</li>
+                    <li>eat : खाने</li>
+                    <li>room : कमरे</li>
+                    <li>friend : दोस्त</li>
+                    <li>began : शुरू हुआ</li>
+                    <li>idea : विचार</li>
+                    <li>fish : मछली</li>
+                    <li>mountain : पहाड़</li>
+                    <li>stop : रोक</li>
+                    <li>once : एक बार</li>
+                    <li>base : आधार</li>
+                    <li>hear : सुनना</li>
+                    <li>horse : घोड़ा</li>
+                    <li>cut : कटौती</li>
+                    <li>sure : यकीन</li>
+                    <li>watch : घड़ी</li>
+                    <li>color : रंग</li>
+                    <li>face : चेहरा</li>
+                    <li>wood : लकड़ी</li>
+                    <li>main : मुख्य</li>
+                    <li>open : खुला</li>
+                    <li>seem : प्रतीत</li>
+                    <li>together : एक साथ</li>
+                    <li>next : अगला</li>
+                    <li>white : सफेद</li>
+                    <li>children : बच्चों</li>
+                    <li>begin : प्रारंभ करना</li>
+                    <li>got : मिला</li>
+                    <li>walk : चलना</li>
+                    <li>example : उदाहरण</li>
+                    <li>ease : आसानी</li>
+                    <li>paper : कागज</li>
+                    <li>group : समूह</li>
+                    <li>always : सदैव</li>
+                    <li>music : संगीत</li>
+                    <li>those : उन</li>
+                    <li>both : दोनों</li>
+                    <li>mark : मार्क</li>
+                    <li>often : अक्सर</li>
+                    <li>letter : पत्र</li>
+                    <li>until : जब तक</li>
+                    <li>mile : मील</li>
+                    <li>river : नदी</li>
+                    <li>car : कार</li>
+                    <li>feet : पैर</li>
+                    <li>care : देखभाल</li>
+                    <li>second : दूसरा</li>
+                    <li>enough : पर्याप्त</li>
+                    <li>plain : सादे</li>
+                    <li>girl : लड़की</li>
+                    <li>usual : हमेशा की तरह</li>
+                    <li>young : युवा</li>
+                    <li>ready : तैयार</li>
+                    <li>above : ऊपर</li>
+                    <li>ever : कभी</li>
+                    <li>red : लाल</li>
+                    <li>list : सूची</li>
+                    <li>though : हालांकि</li>
+                    <li>feel : लग रहा है</li>
+                    <li>talk : वार्ता</li>
+                    <li>bird : पक्षी</li>
+                    <li>soon : शीघ्र</li>
+                    <li>body : शरीर</li>
+                    <li>dog : कुत्ते</li>
+                    <li>family : परिवार</li>
+                    <li>direct : प्रत्यक्ष</li>
+                    <li>pose : ढोंग</li>
+                    <li>leave : छोड़</li>
+                    <li>song : गीत</li>
+                    <li>measure : नाप</li>
+                    <li>door : दरवाजा</li>
+                    <li>product : उत्पाद</li>
+                    <li>black : काला</li>
+                    <li>short : कम</li>
+                    <li>numeral : अंक</li>
+                    <li>class : क्लास</li>
+                    <li>wind : हवा</li>
+                    <li>question : सवाल</li>
+                    <li>happen : होना</li>
+                    <li>complete : पूरा</li>
+                    <li>ship : जहाज</li>
+                    <li>area : क्षेत्र</li>
+                    <li>half : आधा</li>
+                    <li>rock : रॉक</li>
+                    <li>order : आदेश</li>
+                    <li>fire : आग</li>
+                    <li>south : दक्षिण</li>
+                    <li>problem : समस्या</li>
+                    <li>piece : टुकड़ा</li>
+                    <li>told : बताया</li>
+                    <li>knew : पता था</li>
+                    <li>pass : पास</li>
+                    <li>since : के बाद से</li>
+                    <li>top : शीर्ष</li>
+                    <li>whole : पूरे</li>
+                    <li>king : राजा</li>
+                    <li>street : सड़क</li>
+                    <li>inch : इंच</li>
+                    <li>multiply : गुणा</li>
+                    <li>nothing : कुछ नहीं</li>
+                    <li>course : कोर्स</li>
+                    <li>stay : रहना</li>
+                    <li>wheel : पहिया</li>
+                    <li>full : पूर्ण</li>
+                    <li>force : बल</li>
+                    <li>blue : नीला</li>
+                    <li>object : वस्तु</li>
+                    <li>decide : तय</li>
+                    <li>surface : सतह</li>
+                    <li>deep : गहरा</li>
+                    <li>moon : चांद</li>
+                    <li>island : द्वीप</li>
+                    <li>foot : पैर</li>
+                    <li>system : प्रणाली</li>
+                    <li>busy : व्यस्त</li>
+                    <li>test : परीक्षण</li>
+                    <li>record : रिकॉर्ड</li>
+                    <li>boat : नाव</li>
+                    <li>common : आम</li>
+                    <li>gold : सोना</li>
+                    <li>possible : संभव</li>
+                    <li>plane : विमान</li>
+                    <li>stead : जगह</li>
+                    <li>dry : सूखा</li>
+                    <li>wonder : आश्चर्य</li>
+                    <li>laugh : हंसी</li>
+                    <li>thousand : हजार</li>
+                    <li>ago : पहले</li>
+                    <li>ran : भागा</li>
+                    <li>check : जाँच</li>
+                    <li>game : खेल</li>
+                    <li>shape : आकार</li>
+                    <li>equate : समानता</li>
+                    <li>hot : गरम</li>
+                    <li>miss : मिस</li>
+                    <li>brought : लाया</li>
+                    <li>heat : गर्मी</li>
+                    <li>snow : बर्फ</li>
+                    <li>tire : टायर</li>
+                    <li>bring : लाना</li>
+                    <li>yes : हां</li>
+                    <li>distant : दूर</li>
+                    <li>fill : भरने</li>
+                    <li>east : पूर्व</li>
+                    <li>paint : रंग</li>
+                    <li>language : भाषा</li>
+                    <li>among : के बीच</li>
+                    <li>unit : इकाई</li>
+                    <li>power : बिजली</li>
+                    <li>town : शहर</li>
+                    <li>fine : ठीक</li>
+                    <li>certain : कुछ</li>
+                    <li>fly : मक्खी</li>
+                    <li>fall : गिरावट</li>
+                    <li>lead : नेतृत्व</li>
+                    <li>cry : रोना</li>
+                    <li>dark : अंधेरा</li>
+                    <li>machine : मशीन</li>
+                    <li>note : नोट</li>
+                    <li>wait : इंतजार</li>
+                    <li>plan : योजना</li>
+                    <li>figure : आंकड़ा</li>
+                    <li>star : सितारा</li>
+                    <li>box : बॉक्स</li>
+                    <li>noun : संज्ञा</li>
+                    <li>field : क्षेत्र</li>
+                    <li>rest : बाकी</li>
+                    <li>correct : सही</li>
+                    <li>able : सक्षम</li>
+                    <li>pound : पाउंड</li>
+                    <li>done : किया</li>
+                    <li>beauty : सुंदरता</li>
+                    <li>drive : ड्राइव</li>
+                    <li>stood : खड़ा हुआ</li>
+                    <li>contain : होते हैं</li>
+                    <li>front : सामने</li>
+                    <li>teach : सिखाना</li>
+                    <li>week : सप्ताह</li>
+                    <li>final : अंतिम</li>
+                    <li>gave : दिया</li>
+                    <li>green : हरे रंग</li>
+                    <li>oh : ओह</li>
+                    <li>quick : त्वरित</li>
+                    <li>develop : विकसित</li>
+                    <li>ocean : सागर</li>
+                    <li>warm : गर्म</li>
+                    <li>free : मुक्त</li>
+                    <li>minute : मिनट</li>
+                    <li>strong : मजबूत</li>
+                    <li>special : विशेष</li>
+                    <li>mind : मन</li>
+                    <li>behind : पीछे</li>
+                    <li>clear : स्पष्ट</li>
+                    <li>tail : पूंछ</li>
+                    <li>produce : उत्पादन</li>
+                    <li>fact : तथ्य</li>
+                    <li>space : अंतरिक्ष</li>
+                    <li>heard : सुना</li>
+                    <li>best : सर्वश्रेष्ठ</li>
+                    <li>hour : घंटे</li>
+                    <li>better : बेहतर</li>
+                    <li>TRUE : सच</li>
+                    <li>during : दौरान</li>
+                    <li>hundred : सौ</li>
+                    <li>five : पांच</li>
+                    <li>remember : याद</li>
+                    <li>step : कदम</li>
+                    <li>early : शीघ्र</li>
+                    <li>hold : पकड़</li>
+                    <li>west : पश्चिम</li>
+                    <li>ground : जमीन</li>
+                    <li>interest : ब्याज</li>
+                    <li>reach : तक पहुँचने</li>
+                    <li>fast : तेजी</li>
+                    <li>verb : क्रिया</li>
+                    <li>sing : गाना</li>
+                    <li>listen : सुनो</li>
+                    <li>six : छह</li>
+                    <li>table : तालिका</li>
+                    <li>travel : यात्रा</li>
+                    <li>less : कम</li>
+                    <li>morning : सुबह</li>
+                    <li>ten : दस</li>
+                    <li>simple : सरल</li>
+                    <li>several : कई</li>
+                    <li>vowel : स्वर</li>
+                    <li>toward : की ओर</li>
+                    <li>war : युद्ध</li>
+                    <li>lay : रखना</li>
+                    <li>against : के खिलाफ</li>
+                    <li>pattern : पैटर्न</li>
+                    <li>slow : धीमी</li>
+                    <li>center : केंद्र</li>
+                    <li>love : प्यार</li>
+                    <li>person : व्यक्ति</li>
+                    <li>money : धन</li>
+                    <li>serve : सेवा कर</li>
+                    <li>appear : प्रकट</li>
+                    <li>road : सड़क</li>
+                    <li>map : नक्शा</li>
+                    <li>rain : बारिश</li>
+                    <li>rule : नियम</li>
+                    <li>govern : शासन</li>
+                    <li>pull : खींच</li>
+                    <li>cold : ठंड</li>
+                    <li>notice : नोटिस</li>
+                    <li>voice : आवाज</li>
+                    <li>energy : ऊर्जा</li>
+                    <li>hunt : शिकार</li>
+                    <li>probable : संभावित</li>
+                    <li>bed : बिस्तर</li>
+                    <li>brother : भाई</li>
+                    <li>egg : अंडा</li>
+                    <li>ride : सवारी</li>
+                    <li>cell : सेल</li>
+                    <li>believe : विश्वास है</li>
+                    <li>perhaps : शायद</li>
+                    <li>pick : उठाओ</li>
+                    <li>sudden : अचानक</li>
+                    <li>count : गिनती</li>
+                    <li>square : वर्ग</li>
+                    <li>reason : कारण</li>
+                    <li>length : लंबाई</li>
+                    <li>represent : का प्रतिनिधित्व</li>
+                    <li>art : कला</li>
+                    <li>subject : विषय</li>
+                    <li>region : क्षेत्र</li>
+                    <li>size : आकार</li>
+                    <li>vary : भिन्न हो</li>
+                    <li>settle : बसा</li>
+                    <li>speak : बोलना</li>
+                    <li>weight : वजन</li>
+                    <li>general : सामान्य</li>
+                    <li>ice : बर्फ</li>
+                    <li>matter : मामला</li>
+                    <li>circle : वृत्त</li>
+                    <li>pair : जोड़ी</li>
+                    <li>include : शामिल</li>
+                    <li>divide : विभाजन</li>
+                    <li>syllable : शब्दांश</li>
+                    <li>felt : लगा</li>
+                    <li>grand : भव्य</li>
+                    <li>ball : गेंद</li>
+                    <li>yet : अभी तक</li>
+                    <li>wave : लहर</li>
+                    <li>drop : ड्रॉप</li>
+                    <li>heart : दिल</li>
+                    <li>am : AM</li>
+                    <li>present : वर्तमान</li>
+                    <li>heavy : भारी</li>
+                    <li>dance : नृत्य</li>
+                    <li>engine : इंजन</li>
+                    <li>position : स्थिति</li>
+                    <li>arm : बांह</li>
+                    <li>wide : विस्तृत</li>
+                    <li>sail : स्टील अथॉरिटी ऑफ इंडिया</li>
+                    <li>material : सामग्री</li>
+                    <li>fraction : अंश</li>
+                    <li>forest : वन</li>
+                    <li>sit : बैठना</li>
+                    <li>race : दौड़</li>
+                    <li>window : खिड़की</li>
+                    <li>store : दुकान</li>
+                    <li>summer : गर्मियों</li>
+                    <li>train : सफर</li>
+                    <li>sleep : नींद</li>
+                    <li>prove : साबित</li>
+                    <li>lone : लोन</li>
+                    <li>leg : पैर</li>
+                    <li>exercise : व्यायाम</li>
+                    <li>wall : दीवार</li>
+                    <li>catch : पकड़</li>
+                    <li>mount : माउंट</li>
+                    <li>wish : इच्छा</li>
+                    <li>sky : आसमान</li>
+                    <li>board : बोर्ड</li>
+                    <li>joy : हर्ष</li>
+                    <li>winter : सर्दियों</li>
+                    <li>sat : शनि</li>
+                    <li>written : लिखित</li>
+                    <li>wild : जंगली</li>
+                    <li>instrument : साधन</li>
+                    <li>kept : रखा</li>
+                    <li>glass : कांच</li>
+                    <li>grass : घास</li>
+                    <li>cow : गाय</li>
+                    <li>job : काम</li>
+                    <li>edge : बढ़त</li>
+                    <li>sign : साइन</li>
+                    <li>visit : यात्रा</li>
+                    <li>past : अतीत</li>
+                    <li>soft : मुलायम</li>
+                    <li>fun : मज़ा</li>
+                    <li>bright : उज्ज्वल</li>
+                    <li>gas : गैस</li>
+                    <li>weather : मौसम</li>
+                    <li>month : माह</li>
+                    <li>million : लाख</li>
+                    <li>bear : भालू</li>
+                    <li>finish : खत्म</li>
+                    <li>happy : खुश</li>
+                    <li>hope : आशा</li>
+                    <li>flower : फूल</li>
+                    <li>clothe : कपड़े</li>
+                    <li>strange : अजीब</li>
+                    <li>gone : चला गया</li>
+                    <li>trade : व्यापार</li>
+                    <li>melody : राग</li>
+                    <li>trip : यात्रा</li>
+                    <li>office : कार्यालय</li>
+                    <li>receive : प्राप्त करना</li>
+                    <li>row : पंक्ति</li>
+                    <li>mouth : मुंह</li>
+                    <li>exact : सटीक</li>
+                    <li>symbol : प्रतीक</li>
+                    <li>die : मरना</li>
+                    <li>least : कम से कम</li>
+                    <li>trouble : मुसीबत</li>
+                    <li>shout : चिल्लाओ</li>
+                    <li>except : सिवाय</li>
+                    <li>wrote : लिखा</li>
+                    <li>seed : बीज</li>
+                    <li>tone : स्वर</li>
+                    <li>join : शामिल होने</li>
+                    <li>suggest : सुझाव है</li>
+                    <li>clean : साफ</li>
+                    <li>break : तोड़</li>
+                    <li>lady : महिला</li>
+                    <li>yard : यार्ड</li>
+                    <li>rise : वृद्धि</li>
+                    <li>bad : बुरा</li>
+                    <li>blow : झटका</li>
+                    <li>oil : तेल</li>
+                    <li>blood : खून</li>
+                    <li>touch : स्पर्श</li>
+                    <li>grew : बढ़ी</li>
+                    <li>cent : प्रतिशत</li>
+                    <li>mix : मिश्रण</li>
+                    <li>team : टीम</li>
+                    <li>wire : तार</li>
+                    <li>cost : लागत</li>
+                    <li>lost : खोया</li>
+                    <li>brown : ब्राउन</li>
+                    <li>wear : पहनना</li>
+                    <li>garden : बगीचा</li>
+                    <li>equal : बराबर</li>
+                    <li>sent : भेजा</li>
+                    <li>choose : चयन</li>
+                    <li>fell : गिर गया</li>
+                    <li>fit : फिट</li>
+                    <li>flow : प्रवाह</li>
+                    <li>fair : मेला</li>
+                    <li>bank : बैंक</li>
+                    <li>collect : इकट्ठा</li>
+                    <li>save : बचा</li>
+                    <li>control : नियंत्रण</li>
+                    <li>decimal : दशमलव</li>
+                    <li>ear : कान</li>
+                    <li>else : बाकी</li>
+                    <li>quite : काफी</li>
+                    <li>broke : तोड़ दिया</li>
+                    <li>case : मामले</li>
+                    <li>middle : बीच</li>
+                    <li>kill : हत्या</li>
+                    <li>son : बेटा</li>
+                    <li>lake : झील</li>
+                    <li>moment : पल</li>
+                    <li>scale : पैमाने</li>
+                    <li>loud : जोर</li>
+                    <li>spring : वसंत</li>
+                    <li>observe : निरीक्षण</li>
+                    <li>child : बच्चे</li>
+                    <li>straight : सीधे</li>
+                    <li>consonant : व्यंजन</li>
+                    <li>nation : राष्ट्र</li>
+                    <li>dictionary : शब्दकोश</li>
+                    <li>milk : दूध</li>
+                    <li>speed : गति</li>
+                    <li>method : विधि</li>
+                    <li>organ : अंग</li>
+                    <li>pay : भुगतान</li>
+                    <li>age : उम्र</li>
+                    <li>section : अनुभाग</li>
+                    <li>dress : पोशाक</li>
+                    <li>cloud : बादल</li>
+                    <li>surprise : आश्चर्य</li>
+                    <li>quiet : शांत</li>
+                    <li>stone : पत्थर</li>
+                    <li>tiny : छोटे</li>
+                    <li>climb : चढ़ाई</li>
+                    <li>cool : शीतल</li>
+                    <li>design : डिजाइन</li>
+                    <li>poor : गरीब</li>
+                    <li>lot : बहुत</li>
+                    <li>experiment : प्रयोग</li>
+                    <li>bottom : तल</li>
+                    <li>key : कुंजी</li>
+                    <li>iron : लोहा</li>
+                    <li>single : एकल</li>
+                    <li>stick : छड़ी</li>
+                    <li>flat : फ्लैट</li>
+                    <li>twenty : बीस</li>
+                    <li>skin : त्वचा</li>
+                    <li>smile : मुस्कान</li>
+                    <li>crease : क्रीज</li>
+                    <li>hole : छेद</li>
+                    <li>jump : कूद</li>
+                    <li>baby : बच्चे</li>
+                    <li>eight : आठ</li>
+                    <li>village : गांव</li>
+                    <li>meet : मिलो</li>
+                    <li>root : जड़</li>
+                    <li>buy : खरीद</li>
+                    <li>raise : उठाना</li>
+                    <li>solve : हल</li>
+                    <li>metal : धातु</li>
+                    <li>whether : चाहे</li>
+                    <li>push : धक्का</li>
+                    <li>seven : सात</li>
+                    <li>paragraph : पैरा</li>
+                    <li>third : तीसरे</li>
+                    <li>shall : करेगा</li>
+                    <li>held : आयोजित</li>
+                    <li>hair : बाल</li>
+                    <li>describe : वर्णन</li>
+                    <li>cook : कुक</li>
+                    <li>floor : मंजिल</li>
+                    <li>either : भी</li>
+                    <li>result : परिणाम</li>
+                    <li>burn : जला</li>
+                    <li>hill : पहाड़ी</li>
+                    <li>safe : सुरक्षित</li>
+                    <li>cat : बिल्ली</li>
+                    <li>century : सदी</li>
+                    <li>consider : विचार करना</li>
+                    <li>type : प्रकार</li>
+                    <li>law : कानून</li>
+                    <li>bit : बिट</li>
+                    <li>coast : तट</li>
+                    <li>copy : नकल</li>
+                    <li>phrase : वाक्यांश</li>
+                    <li>silent : चुप</li>
+                    <li>tall : लंबा</li>
+                    <li>sand : रेत</li>
+                    <li>soil : मिट्टी</li>
+                    <li>roll : रोल</li>
+                    <li>temperature : तापमान</li>
+                    <li>finger : उंगली</li>
+                    <li>industry : उद्योग</li>
+                    <li>value : मूल्य</li>
+                    <li>fight : लड़ाई</li>
+                    <li>lie : झूठ</li>
+                    <li>beat : हरा</li>
+                    <li>excite : उत्तेजित</li>
+                    <li>natural : प्राकृतिक</li>
+                    <li>view : देखें</li>
+                    <li>sense : भावना</li>
+                    <li>capital : राजधानी</li>
+                    <li>won’t : नहीं होगा</li>
+                    <li>chair : कुर्सी</li>
+                    <li>danger : खतरे</li>
+                    <li>fruit : फल</li>
+                    <li>rich : अमीर</li>
+                    <li>thick : मोटी</li>
+                    <li>soldier : सैनिक</li>
+                    <li>process : प्रक्रिया</li>
+                    <li>operate : संचालित</li>
+                    <li>practice : अभ्यास</li>
+                    <li>separate : अलग</li>
+                    <li>difficult : मुश्किल</li>
+                    <li>doctor : चिकित्सक</li>
+                    <li>please : कृपया</li>
+                    <li>protect : रक्षा</li>
+                    <li>noon : दोपहर</li>
+                    <li>crop : फसल</li>
+                    <li>modern : आधुनिक</li>
+                    <li>element : तत्व</li>
+                    <li>hit : मारना</li>
+                    <li>student : छात्र</li>
+                    <li>corner : कोने</li>
+                    <li>party : पार्टी</li>
+                    <li>supply : आपूर्ति</li>
+                    <li>whose : जिसका</li>
+                    <li>locate : स्थिति जानें</li>
+                    <li>ring : अंगूठी</li>
+                    <li>character : चरित्र</li>
+                    <li>insect : कीट</li>
+                    <li>caught : पकड़ा</li>
+                    <li>period : अवधि</li>
+                    <li>indicate : संकेत मिलता है</li>
+                    <li>radio : रेडियो</li>
+                    <li>spoke : बात</li>
+                    <li>atom : एटम</li>
+                    <li>human : मानव</li>
+                    <li>history : इतिहास</li>
+                    <li>effect : प्रभाव</li>
+                    <li>electric : बिजली</li>
+                    <li>expect : उम्मीद</li>
+                    <li>bone : हड्डी</li>
+                    <li>rail : रेल</li>
+                    <li>imagine : कल्पना</li>
+                    <li>provide : प्रदान</li>
+                    <li>agree : सहमत</li>
+                    <li>thus : इस प्रकार</li>
+                    <li>gentle : कोमल</li>
+                    <li>woman : महिला</li>
+                    <li>captain : कप्तान</li>
+                    <li>guess : अनुमान</li>
+                    <li>necessary : आवश्यक</li>
+                    <li>sharp : तेज़</li>
+                    <li>wing : पंख</li>
+                    <li>create : बना</li>
+                    <li>neighbor : पड़ोसी</li>
+                    <li>wash : धोने</li>
+                    <li>bat : बल्ला</li>
+                    <li>rather : बल्कि</li>
+                    <li>crowd : भीड़</li>
+                    <li>corn : मकई</li>
+                    <li>compare : तुलना</li>
+                    <li>poem : कविता</li>
+                    <li>string : स्ट्रिंग</li>
+                    <li>bell : बेल</li>
+                    <li>depend : निर्भर</li>
+                    <li>meat : मांस</li>
+                    <li>rub : रगड़</li>
+                    <li>tube : ट्यूब</li>
+                    <li>famous : प्रसिद्ध</li>
+                    <li>dollar : डॉलर</li>
+                    <li>stream : धारा</li>
+                    <li>fear : डर</li>
+                    <li>sight : दृष्टि</li>
+                    <li>thin : पतली</li>
+                    <li>triangle : त्रिकोण</li>
+                    <li>planet : ग्रह</li>
+                    <li>hurry : जल्दी करो</li>
+                    <li>chief : प्रमुख</li>
+                    <li>colony : कॉलोनी</li>
+                    <li>clock : घड़ी</li>
+                    <li>mine : मेरा</li>
+                    <li>tie : टाई</li>
+                    <li>enter : दर्ज</li>
+                    <li>major : प्रमुख</li>
+                    <li>fresh : ताजा</li>
+                    <li>search : खोज</li>
+                    <li>send : भेजें</li>
+                    <li>yellow : पीले</li>
+                    <li>gun : बंदूक</li>
+                    <li>allow : की अनुमति</li>
+                    <li>print : प्रिंट</li>
+                    <li>dead : मृत</li>
+                    <li>spot : हाजिर</li>
+                    <li>desert : रेगिस्तान</li>
+                    <li>suit : सूट</li>
+                    <li>current : वर्तमान</li>
+                    <li>lift : लिफ्ट</li>
+                    <li>rose : गुलाब</li>
+                    <li>arrive : पहुंचना</li>
+                    <li>master : मास्टर</li>
+                    <li>track : ट्रैक</li>
+                    <li>parent : माता पिता</li>
+                    <li>shore : किनारे</li>
+                    <li>division : विभाजन</li>
+                    <li>sheet : चादर</li>
+                    <li>substance : पदार्थ</li>
+                    <li>favor : एहसान</li>
+                    <li>connect : कनेक्ट</li>
+                    <li>post : पोस्ट</li>
+                    <li>spend : खर्च</li>
+                    <li>chord : राग</li>
+                    <li>fat : वसा</li>
+                    <li>glad : प्रसन्न</li>
+                    <li>original : मूल</li>
+                    <li>share : शेयर</li>
+                    <li>station : स्टेशन</li>
+                    <li>dad : पिता</li>
+                    <li>bread : रोटी</li>
+                    <li>charge : चार्ज</li>
+                    <li>proper : उचित</li>
+                    <li>bar : बार</li>
+                    <li>offer : प्रस्ताव</li>
+                    <li>segment : खंड</li>
+                    <li>slave : गुलाम</li>
+                    <li>duck : बतख</li>
+                    <li>instant : पल</li>
+                    <li>market : बाजार</li>
+                    <li>degree : डिग्री</li>
+                    <li>populate : आबाद</li>
+                    <li>chick : लड़की</li>
+                    <li>dear : प्रिय</li>
+                    <li>enemy : दुश्मन</li>
+                    <li>reply : उत्तर</li>
+                    <li>drink : पेय</li>
+                    <li>occur : घटित</li>
+                    <li>support : समर्थन</li>
+                    <li>speech : भाषण</li>
+                    <li>nature : प्रकृति</li>
+                    <li>range : सीमा</li>
+                    <li>steam : भाप</li>
+                    <li>motion : प्रस्ताव</li>
+                    <li>path : पथ</li>
+                    <li>liquid : तरल</li>
+                    <li>log : लॉग इन करें</li>
+                    <li>meant : मतलब</li>
+                    <li>quotient : भागफल</li>
+                    <li>teeth : दांत</li>
+                    <li>shell : खोल</li>
+                    <li>neck : गर्दन</li>
+                    <li>oxygen : ऑक्सीजन</li>
+                    <li>sugar : चीनी</li>
+                    <li>death : मौत</li>
+                    <li>pretty : सुंदर</li>
+                    <li>skill : कौशल</li>
+                    <li>women : महिलाओं</li>
+                    <li>season : मौसम</li>
+                    <li>solution : समाधान</li>
+                    <li>magnet : चुंबक</li>
+                    <li>silver : चांदी</li>
+                    <li>thank : धन्यवाद</li>
+                    <li>branch : शाखा</li>
+                    <li>match : मैच</li>
+                    <li>suffix : प्रत्यय</li>
+                    <li>especially : विशेष रूप से</li>
+                    <li>fig : अंजीर</li>
+                    <li>afraid : डर</li>
+                    <li>huge : भारी</li>
+                    <li>sister : बहन</li>
+                    <li>steel : स्टील</li>
+                    <li>discuss : चर्चा</li>
+                    <li>forward : आगे</li>
+                    <li>similar : इसी तरह</li>
+                    <li>guide : गाइड</li>
+                    <li>experience : अनुभव</li>
+                    <li>score : स्कोर</li>
+                    <li>apple : सेब</li>
+                    <li>bought : खरीदा</li>
+                    <li>led : नेतृत्व</li>
+                    <li>pitch : पिच</li>
+                    <li>coat : कोट</li>
+                    <li>mass : सामूहिक</li>
+                    <li>card : कार्ड</li>
+                    <li>band : बैंड</li>
+                    <li>rope : रस्सी</li>
+                    <li>slip : पर्ची</li>
+                    <li>win : जीत</li>
+                    <li>dream : सपना</li>
+                    <li>evening : शाम</li>
+                    <li>condition : शर्त</li>
+                    <li>feed : फ़ीड</li>
+                    <li>tool : उपकरण</li>
+                    <li>total : संपूर्ण</li>
+                    <li>basic : बुनियादी</li>
+                    <li>smell : गंध</li>
+                    <li>valley : घाटी</li>
+                    <li>nor : और न ही</li>
+                    <li>double : डबल</li>
+                    <li>seat : सीट</li>
+                    <li>continue : जारी रखने के</li>
+                    <li>block : खंड</li>
+                    <li>chart : चार्ट</li>
+                    <li>hat : टोपी</li>
+                    <li>sell : बेचने</li>
+                    <li>success : सफलता</li>
+                    <li>company : कंपनी</li>
+                    <li>subtract : घटाना</li>
+                    <li>event : घटना</li>
+                    <li>particular : विशेष</li>
+                    <li>deal : सौदा</li>
+                    <li>swim : तैरना</li>
+                    <li>term : अवधि</li>
+                    <li>opposite : विपरीत</li>
+                    <li>wife : पत्नी</li>
+                    <li>shoe : जूता</li>
+                    <li>shoulder : कंधे</li>
+                    <li>spread : प्रसार</li>
+                    <li>arrange : व्यवस्था</li>
+                    <li>camp : शिविर</li>
+                    <li>invent : आविष्कार</li>
+                    <li>cotton : कपास</li>
+                    <li>born : Born</li>
+                    <li>determine : निर्धारित</li>
+                    <li>quart : चौथाई गेलन</li>
+                    <li>nine : नौ</li>
+                    <li>truck : ट्रक</li>
+                    <li>noise : शोर</li>
+                    <li>level : स्तर</li>
+                    <li>chance : संयोग</li>
+                    <li>gather : इकट्ठा</li>
+                    <li>shop : दुकान</li>
+                    <li>stretch : खिंचाव</li>
+                    <li>throw : फेंक</li>
+                    <li>shine : चमक</li>
+                    <li>property : संपत्ति</li>
+                    <li>column : स्तंभ</li>
+                    <li>molecule : अणु</li>
+                    <li>select : चयन</li>
+                    <li>wrong : गलत</li>
+                    <li>gray : ग्रे</li>
+                    <li>repeat : दोहराना</li>
+                    <li>require : आवश्यकता</li>
+                    <li>broad : विस्तृत</li>
+                    <li>prepare : तैयार</li>
+                    <li>salt : नमक</li>
+                    <li>nose : नाक</li>
+                    <li>plural : बहुवचन</li>
+                    <li>anger : क्रोध</li>
+                    <li>claim : दावा</li>
+                    <li>continent : महाद्वीप</li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+<script>
+    const DemoFun = () => {
+        var Values = document.querySelector('#searchBar').value.toUpperCase();
+        let ul = document.getElementById('filter');
+        let li = document.getElementsByTagName('li');
+        for (let i = 0; i <= li.length; i++) {
+            var DataValues = li[i]
+            var Match = DataValues.textContent;
+            if (Match.toUpperCase().indexOf(Values) > -1) {
+                li[i].style.display = "block";
+            } else {
+                li[i].style.display = "none";
+            }
+
+        };
+    }
+</script>
+
+
+
+</html>

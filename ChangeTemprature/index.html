@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempratureChanges</title>
+</head>
+<style>
+    .container {
+        text-align: center;
+        background-color: red;
+        margin-top: 20%;
+        padding: 10%;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <input type="number" name="value" id="value">
+
+        <select name="change" id="change">
+         <option value="ktc">Kelbin To Celsius</option>
+         <option value="ktf">Kelbin To Fahrenheit</option>
+         <option value="ctk">Celsius To Kalbin</option>
+         <option value="ctf">Celsius To Fahrenheit</option>
+         <option value="ftc">Fahrenheit to Celsius</option>
+         <option value="ftk">Fahrenheit to Kelbin</option>
+
+         
+
+     </select><br><br>
+        <button onclick="Result()">Canvert</button>
+        <br><br><br>
+        <div id="res">Result</div>
+    </div>
+    <script>
+        const Changes = () => {
+            var Num = document.getElementById('value').value;
+            var select = document.getElementById('change').value;
+
+            if (select == 'ktc') {
+                return (Num - 273.15 + " Celsius");
+            } else if (select == 'ftc') {
+                return (Num - 32) / 180 + " Celsius";
+            } else if (select == 'ktf') {
+                return 1.8(Num - 273.15) + 32 + " Fahrenheit";
+            } else if (select == 'ctk') {
+                return Num + 273.15 + " Kelbin";
+            } else if (select == 'ctf') {
+                return (9 / 5 * Num) + 32 + " Fahrenheit";
+            } else {
+                return ((Num - 32) * 5) / 9 + 273.15 + " Kelbin";
+            }
+
+
+        }
+
+
+
+        const Result = () => {
+
+            document.getElementById('res').innerHTML = Changes();
+        }
+    </script>
+
+
+    <!-- 0K − 273.15 = -273.1°C -->
+
+
+</body>
+
+</html>
